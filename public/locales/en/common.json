@@ -1,0 +1,120 @@
+{
+  "site": {
+    "title": "MyQuokka - Making Expat Life in Korea Easier and Richer",
+    "description": "Comprehensive support service for foreigners living in or visiting Korea"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "mypage": "My Page",
+    "logout": "Logout"
+  },
+  "hero": {
+    "title": "Making Expat Life in Korea Easier and Richer",
+    "description": "MyQuokka is a comprehensive support service for foreigners living in or visiting Korea. We help you overcome language barriers, navigate administrative procedures, and adapt to Korean culture.",
+    "cta_primary": "Explore Services",
+    "cta_secondary": "Contact Us"
+  },
+  "categories": {
+    "title": "Find the Information You Need Quickly",
+    "subtitle": "Easily find all the information you need for life in Korea by category",
+    "housing": "Housing",
+    "transportation": "Transportation",
+    "administration": "Administration",
+    "healthcare": "Healthcare",
+    "emergency": "Emergency",
+    "view_more": "Learn More"
+  },
+  "features": {
+    "title": "MyQuokka Service Features",
+    "subtitle": "Special features that make your life in Korea more convenient",
+    "multilingual": {
+      "title": "Multilingual Support",
+      "description": "We provide services in multiple languages including English and Korean. Get the information you need without language barriers."
+    },
+    "ai_assistant": {
+      "title": "AI Assistant",
+      "description": "Our AI assistant quickly answers your questions and provides personalized information. Available 24/7."
+    },
+    "personalized": {
+      "title": "Personalized Support",
+      "description": "We provide customized support services tailored to your situation and needs. We help solve complex problems together."
+    }
+  },
+  "testimonials": {
+    "title": "Customer Reviews",
+    "subtitle": "Check out the real reviews from customers who have used MyQuokka services"
+  },
+  "cta": {
+    "title": "Your New Companion for Life in Korea",
+    "description": "Make your life in Korea easier and richer with MyQuokka. Start now!",
+    "cta_primary": "Start for Free",
+    "cta_secondary": "Explore Services"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "confirm_password": "Confirm Password",
+    "forgot_password": "Forgot your password?",
+    "already_have_account": "Already have an account?",
+    "dont_have_account": "Don't have an account?",
+    "signin_with_google": "Sign in with Google",
+    "signin_with_facebook": "Sign in with Facebook",
+    "or": "or",
+    "submit": "Submit"
+  },
+  "tickets": {
+    "my_tickets": "My Tickets",
+    "create_ticket": "Create Ticket",
+    "ticket_detail": "Ticket Details",
+    "title": "Title",
+    "description": "Description",
+    "category": "Category",
+    "status": "Status",
+    "priority": "Priority",
+    "created_at": "Created At",
+    "updated_at": "Updated At",
+    "messages": "Messages",
+    "add_message": "Add Message",
+    "send": "Send",
+    "status_options": {
+      "pending": "Pending",
+      "in_progress": "In Progress",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    },
+    "priority_options": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "category_options": {
+      "housing": "Housing",
+      "transportation": "Transportation",
+      "administration": "Administration",
+      "healthcare": "Healthcare",
+      "emergency": "Emergency",
+      "other": "Other"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "partners": "Partners",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "copyright": "© {{year}} MyQuokka. All rights reserved."
+  }
+} 
