@@ -1,0 +1,142 @@
+Development Prompt for Cursor AI: MyQuokka Web Application
+Project Overview
+I need a web application for MyQuokka, a comprehensive support service for foreigners in Korea. This platform helps expatriates overcome language barriers, navigate administrative procedures, and adapt to Korean culture. The website should have a database-style information architecture rather than blog posts, with a clean, user-friendly interface that works well in multiple languages.
+Business Context
+
+Target Users: Foreigners in Korea (expatriates, students, tourists, long-term residents)
+Value Proposition: Making life in Korea easier by providing essential information, personalized support, and community connections
+Key Differentiator: Database-style information structure with intuitive navigation + AI-powered assistance
+
+Technical Requirements
+Architecture & Stack
+
+Frontend: React.js with responsive design for all devices
+Database Structure: MongoDB (NoSQL) for flexible content management
+APIs to Integrate:
+
+Google Cloud Translation API (or similar alternative)
+KakaoMap API for location services
+Payment gateway (TossPayments preferred)
+
+
+
+Core Features for Initial MVP
+
+Database-Style Information System
+
+Hierarchical 3-tier structure: Categories → Subcategories → Detailed information
+Custom tagging system for efficient search and related content suggestion
+Initial 5 critical categories: Housing, Transportation, Administrative Procedures, Healthcare, Emergency Response
+
+
+User System
+
+Authentication (email/social login)
+Multilingual profiles (preferred language, residence status, interests)
+Saved/favorite content functionality
+
+
+Ticketing System Integration
+
+Service request submission form
+Ticket tracking and status updates
+Communication thread for each ticket
+Integration with payment system (when service is complete)
+
+
+Basic AI Features
+
+Simple chatbot for common questions
+Content recommendation based on user profile
+Multi-language support (initially English and Korean, expandable to 5+ languages)
+
+
+Admin Panel
+
+Content management system with structured templates
+User and ticket management
+Analytics dashboard
+
+
+
+UI/UX Guidelines
+
+Design Approach: Clean, minimalist interface with intuitive navigation
+Language Selector: Prominently displayed on all pages
+Navigation: Clear categorization with visual icons for each information category
+Search Function: Robust search with filters (category, language, keywords)
+Mobile Responsiveness: Optimized for all device sizes
+Color Scheme: Modern, trustworthy palette that aligns with Korean aesthetic sensibilities while being approachable to internationals
+
+Implementation Priorities
+
+Homepage with category navigation - Clear value proposition, language selection, and direct access to information categories
+Information database structure - Core architecture for storing and retrieving structured content
+Five initial information categories - Complete with subcategories and detailed information pages
+Basic user account system - Registration, profiles, saved content
+Simple ticketing system - Request submission and tracking
+Admin interface - For content management and user support
+
+Specific Page Requirements
+1. Homepage
+
+Language selector (prominent)
+Clear value proposition statement
+Category navigation tiles with icons
+Quick access to emergency information
+Registration/login options
+
+2. Category Landing Pages
+
+Overview of subcategories
+Visual navigation to detailed topics
+Related categories suggestion
+Most accessed/popular content in this category
+
+3. Detailed Information Pages
+
+Structured content with clear headings
+Dual-language support (toggle between languages)
+Save/bookmark functionality
+Related information suggestions
+Quick feedback option ("Was this helpful?")
+
+4. Service Request Pages
+
+Structured form for service requests
+Service type selection with clear pricing
+Appointment scheduling (if applicable)
+File upload capability (for documents needing translation, etc.)
+
+5. User Dashboard
+
+Saved content
+Active tickets/requests
+Profile management
+Language preferences
+
+Development Constraints
+
+Focus on creating a robust MVP rather than implementing all features at once
+Prioritize information architecture and content structure
+Design for future expansion (community features, marketplace)
+Ensure all infrastructure supports multilingual content from the start
+
+Future Integration Considerations
+The code should be structured to eventually accommodate:
+
+React Native mobile app integration
+Community and forum features
+Marketplace for second-hand transactions
+Advanced AI features for personalization
+B2B service platform
+
+Questions for Further Guidance
+
+What specific performance metrics should we prioritize for the MVP phase?
+How should we structure the database to best support multilingual content?
+What's the best approach for implementing the ticketing-payment system integration?
+Are there any specific requirements for handling user data considering privacy regulations for international users?
+How would you recommend building the content management system to facilitate easy updates across multiple languages?
+
+Please provide the foundation code for this web application, focusing on the core architecture, information structure, and initial user flows. Include documentation for future development phases.
