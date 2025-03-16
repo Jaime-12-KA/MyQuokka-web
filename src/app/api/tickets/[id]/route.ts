@@ -34,7 +34,8 @@ export async function GET(
     
     const ticket = await Ticket.findById(ticketId)
       .populate('userId', 'name email')
-      .populate('assignedTo', 'name email');
+      .populate('assignedTo', 'name email')
+      .exec();
     
     if (!ticket) {
       return NextResponse.json(
@@ -90,7 +91,7 @@ export async function PATCH(
     }
     
     // 티켓 존재 여부 확인
-    const ticket = await Ticket.findById(ticketId);
+    const ticket = await Ticket.findById(ticketId).exec();
     
     if (!ticket) {
       return NextResponse.json(
@@ -121,7 +122,8 @@ export async function PATCH(
       { new: true }
     )
       .populate('userId', 'name email')
-      .populate('assignedTo', 'name email');
+      .populate('assignedTo', 'name email')
+      .exec();
     
     return NextResponse.json({
       message: '티켓이 성공적으로 업데이트되었습니다.',

@@ -1,4 +1,4 @@
-import mongoose, { Document, Schema } from 'mongoose';
+import mongoose, { Document, Schema, Model } from 'mongoose';
 
 export interface ITicket extends Document {
   userId: mongoose.Types.ObjectId;
@@ -84,4 +84,7 @@ const TicketSchema = new Schema<ITicket>(
   }
 );
 
-export default mongoose.models.Ticket || mongoose.model<ITicket>('Ticket', TicketSchema); 
+// Model 타입을 명시적으로 정의
+const TicketModel: Model<ITicket> = mongoose.models.Ticket || mongoose.model<ITicket>('Ticket', TicketSchema);
+
+export default TicketModel; 

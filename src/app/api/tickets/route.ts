@@ -93,7 +93,8 @@ export async function GET(req: NextRequest) {
     const tickets = await Ticket.find(query)
       .sort({ updatedAt: -1 })
       .populate('userId', 'name email')
-      .populate('assignedTo', 'name email');
+      .populate('assignedTo', 'name email')
+      .exec();
     
     return NextResponse.json(tickets);
   } catch (error) {
