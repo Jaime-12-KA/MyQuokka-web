@@ -14,27 +14,27 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-3">서비스</h4>
             <ul className="space-y-2">
-              <li><Link href="/services/housing" className="text-neutral-2 hover:text-white">주거</Link></li>
-              <li><Link href="/services/transportation" className="text-neutral-2 hover:text-white">교통</Link></li>
-              <li><Link href="/services/administration" className="text-neutral-2 hover:text-white">행정 절차</Link></li>
-              <li><Link href="/services/healthcare" className="text-neutral-2 hover:text-white">의료</Link></li>
-              <li><Link href="/services/emergency" className="text-neutral-2 hover:text-white">긴급 대응</Link></li>
+              <li><Link href="/services" className="text-neutral-2 hover:text-white">서비스 소개</Link></li>
+              <li><Link href="/services#housing" className="text-neutral-2 hover:text-white">주거</Link></li>
+              <li><Link href="/services#visa" className="text-neutral-2 hover:text-white">비자 및 서류</Link></li>
+              <li><Link href="/services#healthcare" className="text-neutral-2 hover:text-white">의료</Link></li>
+              <li><Link href="/services#education" className="text-neutral-2 hover:text-white">교육</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-lg font-bold mb-3">회사 정보</h4>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-neutral-2 hover:text-white">소개</Link></li>
-              <li><Link href="/blog" className="text-neutral-2 hover:text-white">블로그</Link></li>
-              <li><Link href="/careers" className="text-neutral-2 hover:text-white">채용</Link></li>
-              <li><Link href="/partners" className="text-neutral-2 hover:text-white">제휴 문의</Link></li>
+              <li><Link href="/pricing" className="text-neutral-2 hover:text-white">가격 정책</Link></li>
+              <li><Link href="/resources" className="text-neutral-2 hover:text-white">리소스</Link></li>
+              <li><Link href="/faq" className="text-neutral-2 hover:text-white">자주 묻는 질문</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-lg font-bold mb-3">고객 지원</h4>
             <ul className="space-y-2">
-              <li><Link href="/faq" className="text-neutral-2 hover:text-white">FAQ</Link></li>
-              <li><Link href="/contact" className="text-neutral-2 hover:text-white">문의하기</Link></li>
+              <li><a href="mailto:support@myquokka.com" className="text-neutral-2 hover:text-white">이메일 문의</a></li>
+              <li><a href="tel:+82-2-123-4567" className="text-neutral-2 hover:text-white">전화: 02-123-4567</a></li>
               <li><Link href="/terms" className="text-neutral-2 hover:text-white">이용약관</Link></li>
               <li><Link href="/privacy" className="text-neutral-2 hover:text-white">개인정보처리방침</Link></li>
             </ul>

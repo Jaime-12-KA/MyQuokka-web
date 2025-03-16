@@ -33,10 +33,11 @@ export default function Header() {
         {/* 데스크톱 네비게이션 */}
         <nav className="hidden md:flex space-x-6">
           <Link href="/" className="hover:text-neutral-2">홈</Link>
+          <Link href="/about" className="hover:text-neutral-2">소개</Link>
           <Link href="/services" className="hover:text-neutral-2">서비스</Link>
           <Link href="/pricing" className="hover:text-neutral-2">가격</Link>
+          <Link href="/resources" className="hover:text-neutral-2">리소스</Link>
           <Link href="/faq" className="hover:text-neutral-2">FAQ</Link>
-          <Link href="/contact" className="hover:text-neutral-2">문의하기</Link>
         </nav>
         
         <div className="hidden md:flex space-x-3">
@@ -57,10 +58,11 @@ export default function Header() {
         <div className="md:hidden mt-4 px-4">
           <nav className="flex flex-col space-y-4 pb-4">
             <Link href="/" className="hover:text-neutral-2">홈</Link>
+            <Link href="/about" className="hover:text-neutral-2">소개</Link>
             <Link href="/services" className="hover:text-neutral-2">서비스</Link>
             <Link href="/pricing" className="hover:text-neutral-2">가격</Link>
+            <Link href="/resources" className="hover:text-neutral-2">리소스</Link>
             <Link href="/faq" className="hover:text-neutral-2">FAQ</Link>
-            <Link href="/contact" className="hover:text-neutral-2">문의하기</Link>
           </nav>
           <div className="flex justify-between pt-4 border-t border-white border-opacity-20">
             <select 
