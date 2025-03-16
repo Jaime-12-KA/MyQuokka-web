@@ -19,6 +19,7 @@ export function middleware(request: NextRequest) {
 
   // 언어 코드가 없는 경우 기본 언어로 리다이렉트
   if (pathnameIsMissingLocale) {
+    // 홈페이지인 경우 /ko로 리다이렉트
     const locale = fallbackLng;
     const newUrl = new URL(
       `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`, 
@@ -32,6 +33,9 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // 정적 파일 및 특정 경로는 제외
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)']
+  // 특정 파일 및 API 경로를 제외한 모든 경로 처리
+  matcher: [
+    // 미들웨어가 적용될 경로 설정
+    '/((?!_next/static|_next/image|favicon.ico|api/auth).*)'
+  ]
 };
