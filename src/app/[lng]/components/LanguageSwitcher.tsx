@@ -3,7 +3,7 @@
 
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { languages } from '../../../i18n/settings';
+import { languages } from '../../../middleware-settings';
 
 export default function LanguageSwitcher({ lng }) {
   const router = useRouter();
