@@ -1,12 +1,5 @@
-// 변경 전: export const authOptions: AuthOptions = { ... }
-// 변경 후:
-import { AuthOptions } from 'next-auth';
-
-const authOptions: AuthOptions = {
-  // 기존 구성...
-};
-
-export { authOptions };  // 별도로 내보내기
+import NextAuth from 'next-auth';
+import { authOptions } from '@/app/auth.config';
 
 const handler = NextAuth(authOptions);
-export { handler as GET, handler as POST };
+export { handler as GET, handler as POST }; 
