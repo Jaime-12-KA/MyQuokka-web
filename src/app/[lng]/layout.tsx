@@ -1,5 +1,5 @@
 import { dir } from 'i18next';
-import '../../../styles/globals.css';
+import '../globals.css';
 import { languages } from '../../middleware-settings';
 
 export async function generateStaticParams() {
@@ -15,6 +15,10 @@ export default function LngLayout({
 }) {
   return (
     <html lang={lng} dir={dir(lng)}>
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body>{children}</body>
     </html>
   );
