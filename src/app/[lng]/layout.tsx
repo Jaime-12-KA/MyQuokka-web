@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import { useTranslation } from '../../i18n/server';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import Link from 'next/link';
+import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
