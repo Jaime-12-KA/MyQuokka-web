@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth/next';
 import OpenAI from 'openai';
-import { authOptions } from '../../auth/[...nextauth]/route';
+import { authOptions } from '@/app/auth.config';
 
 // OpenAI 설정
 const openai = new OpenAI({

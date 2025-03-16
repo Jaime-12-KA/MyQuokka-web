@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth/next';
-import { authOptions } from '../../auth/[...nextauth]/route';
+import { authOptions } from '@/app/auth.config';
 
 // 모의 Stripe 구현 (실제 Stripe API 호출 대신 사용)
 export async function POST(req: NextRequest) {
