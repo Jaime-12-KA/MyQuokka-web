@@ -1,8 +1,6 @@
 'use client';
 
 import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 // 서비스 타입 정의
 type Service = {
@@ -154,7 +152,6 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
       <main className="flex-grow">
         {/* 히어로 섹션 */}
         <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
@@ -303,7 +300,6 @@ export default function ServicesPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 } 

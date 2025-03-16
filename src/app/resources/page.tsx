@@ -1,8 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 // 리소스 타입 정의
 type Resource = {
@@ -160,7 +158,6 @@ export default function ResourcesPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
       <main className="flex-grow">
         {/* 히어로 섹션 */}
         <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
@@ -317,7 +314,6 @@ export default function ResourcesPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 } 

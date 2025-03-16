@@ -1,8 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 // FAQ 항목 타입 정의
 type FAQItem = {
@@ -86,7 +84,6 @@ export default function FAQPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
       <main className="flex-grow">
         {/* 헤더 섹션 */}
         <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
@@ -188,7 +185,6 @@ export default function FAQPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 } 
