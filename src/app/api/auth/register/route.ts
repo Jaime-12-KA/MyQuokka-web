@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
     await connectDB();
 
     // 이메일 중복 확인
-    const existingUser = await User.findOne({ email });
+    const existingUser = await User.findOne({ email }).exec();
     if (existingUser) {
       return NextResponse.json(
         { error: '이미 등록된 이메일입니다.' },

@@ -15,7 +15,7 @@ export const authOptions: AuthOptions = {
       if (account?.provider === "google") {
         try {
           await connectDB();
-          const existingUser = await User.findOne({ email: user.email });
+          const existingUser = await User.findOne({ email: user.email }).exec();
           
           if (!existingUser) {
             await User.create({
