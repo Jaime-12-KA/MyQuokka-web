@@ -12,12 +12,12 @@ const nextConfig = {
     },
   },
   
-  // 다국어 지원을 위한 추가 설정
-  // App Router와 미들웨어를 사용하므로 아래 설정은 주석 처리됨
-  // i18n: {
-  //   locales: ['ko', 'en', 'ja', 'zh', 'fr', 'vi', 'th'],
-  //   defaultLocale: 'ko',
-  // }
+  // 다국어 지원을 위한 설정
+  i18n: {
+    locales: ['ko', 'en', 'ja', 'zh', 'fr', 'vi', 'th'],
+    defaultLocale: 'ko',
+    localeDetection: true
+  }
 };
 
 module.exports = nextConfig;

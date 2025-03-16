@@ -1,50 +1,55 @@
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import '../globals.css';
-import { languages } from '../../../src/middleware-settings';
-import Header from './components/Header';
-import MobileMenu from './components/MobileMenu';
-import Footer from './components/Footer';
+import { useTranslation } from '../../i18n/server';
+import LanguageSwitcher from './components/LanguageSwitcher';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'MyQuokka - 한국에서의 외국인 생활, 더 쉽고 풍요롭게',
-  description: '비자, 세금, 주택 등 한국에서의 외국인 생활에 필요한 모든 정보와 서비스를 제공합니다.',
-};
+export default async function Layout({ children, params: { lng } }) {
+  const { t } = await useTranslation(lng, 'common');
 
-export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }));
-}
-
-export default function RootLayout({
-  children,
-  params: { lng },
-}: {
-  children: React.ReactNode;
-  params: { lng: string };
-}) {
   return (
     <html lang={lng}>
       <body className={inter.className}>
         <div className="min-h-screen flex flex-col">
-          <div className="container mx-auto px-4 sm:px-6 md:px-8">
-            <div className="flex justify-between items-center py-4">
-              <div className="flex items-center">
-                <div className="font-bold text-2xl text-primary">MyQuokka</div>
-              </div>
-              <div className="flex items-center">
-                <div className="hidden md:block">
-                  <Header lng={lng} />
+          <header className="bg-white shadow">
+            <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+              <div className="flex justify-between items-center">
+                <div className="flex items-center space-x-8">
+                  <Link href={`/${lng}`} className="text-2xl font-bold text-gray-900">
+                    MyQuokka
+                  </Link>
+                  <nav className="hidden md:flex space-x-4">
+                    <Link href={`/${lng}/about`} className="text-gray-600 hover:text-gray-900">
+                      {t('about.title')}
+                    </Link>
+                    <Link href={`/${lng}/services`} className="text-gray-600 hover:text-gray-900">
+                      Services
+                    </Link>
+                    <Link href={`/${lng}/resources`} className="text-gray-600 hover:text-gray-900">
+                      Resources
+                    </Link>
+                    <Link href={`/${lng}/pricing`} className="text-gray-600 hover:text-gray-900">
+                      Pricing
+                    </Link>
+                  </nav>
                 </div>
-                <MobileMenu lng={lng} />
+                <LanguageSwitcher lng={lng} />
               </div>
             </div>
-          </div>
+          </header>
+
           <main className="flex-grow">
             {children}
           </main>
-          <Footer lng={lng} />
+
+          <footer className="bg-gray-800 text-white py-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center">
+                <p>&copy; 2024 MyQuokka. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
         </div>
       </body>
     </html>
